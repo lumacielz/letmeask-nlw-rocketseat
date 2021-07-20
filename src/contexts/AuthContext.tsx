@@ -9,10 +9,10 @@ type User = {
     name: string;
     avatar: string;
   }
-  type AuthContextType = {
-    user: User | undefined;
-    signInWithGoogle: () => Promise<void>;
-  }
+type AuthContextType = {
+  user: User | undefined;
+  signInWithGoogle: () => Promise<void>;
+}
   export const AuthContext = createContext({} as AuthContextType);
 type AuthContextProviderProps = {
     children: ReactNode;
